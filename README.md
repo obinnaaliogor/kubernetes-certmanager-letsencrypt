@@ -1,5 +1,6 @@
 We will automate the creation of ssl/tls certificate in kubernetes using letsencrypt.
 Reference <https://letsencrypt.org/docs/>
+
 helm repo add jetstack <https://charts.jetstack.io>
 
 helm repo add ingress-nginx <https://kubernetes.github.io/ingress-nginx>
@@ -116,3 +117,8 @@ letsencrypt-nginx-1-3837422662   ready   21s
 ➜  kubernetes-certmanager-letsencrypt git:(main) ✗ k get certificaterequests.cert-manager.io -n backend
 NAME                  APPROVED   DENIED   READY   ISSUER              REQUESTOR                                         AGE
 letsencrypt-nginx-1   True                True    letsencrypt-nginx   system:serviceaccount:cert-manager:cert-manager   36s
+
+#https://porkbun.com/account/domainsSpeedy?fo=1&oid=4866763
+you can register a domain from the above site and change the authoritative ns <nameserver> with that of your cloud provider where your application or ELB was created eg. aws,gcp,digitalocean etc.
+this was exactly what i did, follow this guide
+Reference: https://dev.to/mubbashir10/point-your-domain-to-aws-using-route-53-42kf
