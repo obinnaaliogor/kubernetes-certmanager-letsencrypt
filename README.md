@@ -8,8 +8,6 @@ helm repo update ingress-nginx
 
 helm search repo ingress-nginx
 
-Comparing diff cloud services
-https://medium.com/@mohsho10/aws-azure-google-cloud-service-comparison-c8b3e6eafaa
 
 nginx ingress controller github repo:
 https://github.com/kubernetes/ingress-nginx/blob/main/README.md#readme
@@ -90,4 +88,4 @@ helm install cert-manager jetstack/cert-manager --version "$CERT_MANAGER_HELM_CH
 
 TO know the ip addresses of the clients that made requests to our application.
 For logging purposes and our application needs.
-Then we have to enable proxy protocol on the ingress controller, this can be done on the ingress controllers value file. 
+Then we have to enable proxy protocol on the ingress controller, this can be done on the ingress controllers value file.
