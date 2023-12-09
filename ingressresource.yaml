@@ -8,10 +8,10 @@ metadata:
 spec:
   tls:
   - hosts:
-    - quote.wiz-obi.com
+    - quote.obinnaaliogor.xyz
     secretName: letsencrypt-nginx #this should match the cert manager resource name
   rules:
-    - host: quote.wiz-obi.com
+    - host: quote.obinnaaliogor.xyz
       http:
         paths:
           - path: /
