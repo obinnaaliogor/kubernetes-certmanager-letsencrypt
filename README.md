@@ -51,7 +51,7 @@ curl -v -k <http://quote.obinnaaliogor.xyz/>
 * using HTTP/2
 * h2 [:method: GET]
 * h2 [:scheme: https]
-* h2 [:authority: quote.wiz-obi.com]
+* h2 [:authority: quote.obinnaaliogor.xyz]
 * h2 [:path: /]
 * h2 [user-agent: curl/8.1.2]
 * h2 [accept: */*]
@@ -73,7 +73,7 @@ curl -v -k <http://quote.obinnaaliogor.xyz/>
     "quote": "Non-locality is the driver of truth. By summoning, we vibrate.",
     "time": "2023-12-09T02:24:10.339076835Z"
 
-* Connection #0 to host quote.wiz-obi.com left intact
+* Connection #0 to host quote.obinnaaliogor.xyz left intact
 }%
 
 ...
@@ -101,6 +101,7 @@ ingress.networking.k8s.io "ingress-quote" deleted
 ingress.networking.k8s.io/ingress-quote replaced
 ➜  kubernetes-certmanager-letsencrypt git:(main) ✗
 ➜  kubernetes-certmanager-letsencrypt git:(main) ✗
+
 ➜  kubernetes-certmanager-letsencrypt git:(main) ✗ k get orders.acme.cert-manager.io -n backend
 NAME                             STATE     AGE
 letsencrypt-nginx-1-3837422662   pending   4s
