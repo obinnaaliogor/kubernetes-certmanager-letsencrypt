@@ -121,4 +121,7 @@ letsencrypt-nginx-1   True                True    letsencrypt-nginx   system:ser
 #https://porkbun.com/account/domainsSpeedy?fo=1&oid=4866763
 you can register a domain from the above site and change the authoritative ns <nameserver> with that of your cloud provider where your application or ELB was created eg. aws,gcp,digitalocean etc.
 this was exactly what i did, follow this guide
+
 Reference: https://dev.to/mubbashir10/point-your-domain-to-aws-using-route-53-42kf
+
+Reference cert manager docs: https://cert-manager.io/docs/installation/upgrade/
